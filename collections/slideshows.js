@@ -1,0 +1,1 @@
+Slideshows = new Meteor.Collection('slideshows');

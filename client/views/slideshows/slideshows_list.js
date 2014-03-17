@@ -1,4 +1,4 @@
-var postsData = [ {
+var slideshowsData = [ {
     title: 'Slideshow1',
     author: 'Sacha Greif',
     url: 'http://sachagreif.com/introducing-telescope/'
@@ -13,5 +13,8 @@ var postsData = [ {
 } ];
 
 
-Template.slideshowsList.helpers({ slideshows: postsData
+Template.slideshowsList.helpers({
+    slideshows: function() {
+        return Slideshows.find();
+    }
 });
